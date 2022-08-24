@@ -13,7 +13,6 @@ if len(letter) != 1:
     exit()
 
 
-
 print("Searching for " + letter + " in " + word)
 
 counter : int = 0
@@ -38,5 +37,5 @@ if counter == 1:
     print(str(counter) + " instance of " + letter + " found in " + word)
 if counter == 0:
     print("No instances of " + letter + " found in " + word)
-else: 
+if counter > 1: 
     print(str(counter) + " instances of " + letter + " found in " + word)
