@@ -32,18 +32,11 @@ def sub(nums: list[int], start: int, end: int) -> list[int]:
 
     i: int = start
 
-    if len(nums) == 0 or start > len(nums) or end <= 0:
+    if len(nums) == 0 or start >= len(nums) or end <= 0 or start < 0 or end >= len(nums):
         return subbed
 
     while i < end:
         subbed.append(nums[i])
-        i+=1
+        i += 1
     
     return subbed
-
-
-
-
-
-
-
